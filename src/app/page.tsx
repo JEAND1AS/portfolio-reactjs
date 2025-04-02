@@ -1,11 +1,22 @@
-import Link from "next/link";
+import { AboutMe } from "./components/Home/AboutMe";
+
 
 const Home = () => {
   return (
-    <main>
-      <h1>Hello World com Next.js</h1>
-      <Link href="/contatos">Ir para a pagina contatos</Link>
-    </main>
+    <>
+  
+
+      <head>
+        <title>Sobre mim | Jean</title>
+        <meta name="description" content="Desenvolvedor junior frontend que desenvolve interfaces gráficas"/>
+      </head>
+
+      <div>
+        <AboutMe />
+      </div>
+
+    </>
+
   );
 }
 
