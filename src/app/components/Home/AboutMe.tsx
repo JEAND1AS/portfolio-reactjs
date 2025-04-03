@@ -1,5 +1,7 @@
-import Link from "next/link"
+import Link from "next/link";
+import Image from "next/image";
 
+   
 
 export const AboutMe = () => {
     return(
@@ -19,7 +21,13 @@ export const AboutMe = () => {
                 </ul>
             </div>
             <div>
-                <img src="https://avatars.githubusercontent.com/u/83466660?v=4"  alt="Foto de perfil de Jean"/>
+                <Image src="https://avatars.githubusercontent.com/u/83466660?v=4"  alt="Foto de perfil de Jean"
+                width={500}
+                height={500}
+                quality={100}
+                priority={true}
+                placeholder="empty"
+                unoptimized/>
                 <p>
                     <span>1+</span>
                     <br />
