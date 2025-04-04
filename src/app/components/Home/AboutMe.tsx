@@ -26,6 +26,8 @@ export const AboutMe = () => {
                     <li style={{ backgroundColor: '#6BDDFA', color: '#00000'}} className="w-fit p-2 rounded-md">React</li>
                     <li style={{ backgroundColor: '#EFD81D', color: '#00000'}} className="w-fit p-2 rounded-md">Javascript</li>
                     <li style={{ backgroundColor: '#000000', color: '#FFFFF'}} className="w-fit p-2 rounded-md">Next.JS</li>
+                    <li style={{ backgroundColor: '#FF0000', color: '#FFFFF'}} className="w-fit p-2 rounded-md">Nest.JS</li>
+                    <li style={{ backgroundColor: '#808080', color: '#FFFFF'}} className="w-fit p-2 rounded-md">SQL server</li>
                 </ul>
             </div>
             <div className="relative">
@@ -36,7 +38,7 @@ export const AboutMe = () => {
                 priority={true}
                 placeholder="empty"
                 unoptimized
-                className="rounded-full"/>
+                className="rounded-full shadow-[0_0_20px_5px_rgba(139,195,255,0.8)]"/>
                 <p className="p-4 w-fit text-base leading-tight bg-h-blue-500 rounded-xl text-black absolute -bottom-[15px] -left-[20px]">
                     <span className="text-4xl">1+</span>
                     <br />
