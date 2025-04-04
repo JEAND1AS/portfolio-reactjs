@@ -1,37 +1,46 @@
 import Link from "next/link";
 import Image from "next/image";
+import { Roboto } from 'next/font/google'
+
+
+const roboto = Roboto({
+  weight: '400',
+  subsets: ['latin'],
+});
 
    
 
 export const AboutMe = () => {
     return(
-        <main>
-            <div>
-                <h1>Prazer, sou &nbsp;</h1>
-                <span>Jean</span>
-                <div>
-                    <h2>Desenvolvedor junior frontend que desenvolve interfaces gráficas</h2>
-                    <Link href="/contatos">Converse comigo!</Link>
+        <main className="flex flex-wrap-reverse justify-center items-center gap-10 md:gap-32 py-8 text-lg text-center xl:text-left xl:flex-nowrap xl:justify-between">
+            <div className="text-white flex flex-col items-center xl:items-start gap-4 w-full xl:w-120">
+                <h1 className="text-3xl sm:text-7xl xl:leading-[80px]">Prazer, sou&nbsp;
+                <span className="font-bold">Jean</span>
+                </h1>
+                <div className="mb-12">
+                    <h2 className={`${roboto.className} mb-12`}>Desenvolvedor junior frontend que desenvolve interfaces gráficas</h2>
+                    <Link href="/contatos" className="p-3 bg-h-gray-500 w-fit text-xl rounded-lg transition-all hover:bg-opacity-80">Converse comigo!</Link>
                 </div>
-                <ul>
-                    <li style={{ backgroundColor: '#2F74C0', color: '#FFFFF'}}>Typescript</li>
-                    <li style={{ backgroundColor: '#6BDDFA', color: '#00000'}}>React</li>
-                    <li style={{ backgroundColor: '#EFD81D', color: '#00000'}}>Javascript</li>
-                    <li style={{ backgroundColor: '#000000', color: '#FFFFF'}}>Next.JS</li>
+                <ul className="flex flex-wrap justify-center xl:grid xl:grid-cols-2 xl:w-fit gap-3 text-xl">
+                    <li style={{ backgroundColor: '#2F74C0', color: '#FFFFF'}} className="w-fit p-2 rounded-md">Typescript</li>
+                    <li style={{ backgroundColor: '#6BDDFA', color: '#00000'}} className="w-fit p-2 rounded-md">React</li>
+                    <li style={{ backgroundColor: '#EFD81D', color: '#00000'}} className="w-fit p-2 rounded-md">Javascript</li>
+                    <li style={{ backgroundColor: '#000000', color: '#FFFFF'}} className="w-fit p-2 rounded-md">Next.JS</li>
                 </ul>
             </div>
-            <div>
+            <div className="relative">
                 <Image src="https://avatars.githubusercontent.com/u/83466660?v=4"  alt="Foto de perfil de Jean"
-                width={500}
+                width={300}
                 height={500}
                 quality={100}
                 priority={true}
                 placeholder="empty"
-                unoptimized/>
-                <p>
-                    <span>1+</span>
+                unoptimized
+                className="rounded-full"/>
+                <p className="p-4 w-fit text-base leading-tight bg-h-blue-500 rounded-xl text-black absolute -bottom-[15px] -left-[20px]">
+                    <span className="text-4xl">1+</span>
                     <br />
-                    anos de experiência
+                    ano de experiência
                 </p>
             </div>
         </main>

@@ -12,13 +12,13 @@ const roboto = Roboto({
 
 export default function Header() {
   return (
-    <header className={roboto.className}>
+    <header className={ `${roboto.className} bg-h-blue-900 text-sm flex py-3 px-5 justify-between items-center sticky top-0 z-20 ` }>
       <Link href="/">
         <Image src="/icon.svg" alt="Ícone da letra J"
         width={55}
         height={55} />
       </Link>
-      <nav>
+      <nav className="hidden md:flex items-center gap-10">
         <Link href="/">Sobre mim</Link>
         <Link href="/portfolio">Portfólio</Link>
         <Link href="/contatos">Entre em contato</Link>

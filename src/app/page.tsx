@@ -11,7 +11,7 @@ const Home = () => {
         <meta name="description" content="Desenvolvedor junior frontend que desenvolve interfaces gráficas"/>
       </head>
 
-      <div>
+      <div className="py-12 px-6 md:pdx-32 space-y-10 md:space-y-28">
         <AboutMe />
       </div>
 
