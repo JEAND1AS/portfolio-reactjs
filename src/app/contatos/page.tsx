@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { CopyButton } from "../components/CopyButton";
 
 const Contatos = () => {
     return (
@@ -17,19 +17,19 @@ const Contatos = () => {
                     <li className="md:text-xl">
                         <span className="font-bold">E-mail</span>
                         <div className="flex gap-1 md:gap-3 items-center">
-                            <a aria-label="Email Jean" href="mailto:jeandias1.jd1@gmail.com" className="text-sm md:text-lg underline truncate">jeandias1.jd1@gmail.com</a>
+                            <a aria-label="Email Jean" href="mailto:jeandias1.jd1@gmail.com" className="text-sm md:text-lg underline truncate">jeandias1.jd1@gmail.com</a><CopyButton textToCopy="jeandias1.jd1@gmail.com"/>
                         </div>
                     </li>
                     <li className="md:text-xl">
                         <span className="font-bold">Linkedin</span>
                         <div>
-                            <a href="https://www.linkedin.com/in/jean-dias-231366197/" className="text-sm md:text-lg underline truncate">https://www.linkedin.com/in/jean-dias-231366197/</a>
+                            <a href="https://www.linkedin.com/in/jean-dias-231366197/" className="text-sm md:text-lg underline truncate">https://www.linkedin.com/in/jean-dias-231366197/ </a><CopyButton textToCopy="https://www.linkedin.com/in/jean-dias-231366197/"/>
                         </div>
                     </li>
                     <li className="md:text-xl">
                         <span className="font-bold">GitHub</span>
                         <div>
-                            <a href="https://github.com/JEAND1AS" className="text-sm md:text-lg underline truncate">https://github.com/JEAND1AS</a>
+                            <a href="https://github.com/JEAND1AS" className="text-sm md:text-lg underline truncate">https://github.com/JEAND1AS</a><CopyButton textToCopy="https://github.com/JEAND1AS"/>
                         </div>
                     </li>
                 </ul>
