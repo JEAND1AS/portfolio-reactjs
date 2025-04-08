@@ -5,40 +5,22 @@ import { Projects } from "./components/Home/Project";
 const Home = () => {
   const projects = [
     {
-      slug: 'Github-Projeto1',
-      name: 'Projeto 1',
+      slug: 'Criação de usuário',
+      name: 'Projeto com React + monorepo + tRPC',
       image: {
-        url: 'https://github.com/JEAND1AS/Projeto-1',
-        alt: 'escreva aqui uma descrição da imagem',
-      }
-    },
-
-    {
-      slug: 'Github-Projeto2',
-      name: 'Projeto 2',
-      image: {
-        url: 'https://github.com/JEAND1AS/Projeto-1',
-        alt: 'escreva aqui uma descrição da imagem',
-      }
-    },
-
-    {
-      slug: 'Github-Projeto3',
-      name: 'Projeto 3',
-      image: {
-        url: 'https://github.com/JEAND1AS/Projeto-1',
-        alt: 'escreva aqui uma descrição da imagem',
+        url: 'https://imgur.com/CJrYr0G.png',
+        alt: 'Projeto feito com React + monorepo + tRPC',
       }
     },
     {
-      slug: 'Github-Projeto4',
-      name: 'Projeto 4',
+      slug: 'Site portfólio',
+      name: 'Portfolio feito com HTML, CSS e Javascript',
       image: {
-        url: 'https://github.com/JEAND1AS/Projeto-1',
-        alt: 'escreva aqui uma descrição da imagem',
+        url: 'https://imgur.com/FhCIf84.png',
+        alt: 'Portfolio feito com HTML, CSS e Javascript',
       }
-    }
-  ]
+    },
+  ];
 
   return (
     <>

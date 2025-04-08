@@ -2,15 +2,21 @@
 const nextConfig = {
     reactStrictMode: true,
     images: {
-        remotePatterns: [
-            {
-                protocol: 'https',
-                hostname: 'avatars.githubusercontent.com',
-                port: '',
-                pathname: '/u/**'
-            }
-        ]
-    }
-}
+      remotePatterns: [
+        {
+          protocol: 'https',
+          hostname: 'avatars.githubusercontent.com',
+          pathname: '/u/**',
+        },
+        { 
+          protocol: 'https',
+          hostname: 'imgur.com',
+          pathname: '**',
+        },
 
-module.exports = nextConfig
+      ],
+    },
+  };
+  
+  module.exports = nextConfig;
+  

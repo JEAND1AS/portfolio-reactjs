@@ -18,7 +18,7 @@ export const AboutMe = () => {
                 <strong className="font-bold">Jean</strong>
                 </h1>
                 <div className="mb-12">
-                    <h2 className={`${roboto.className} mb-12`}>Desenvolvedor junior frontend que desenvolve interfaces gráficas</h2>
+                    <h2 className={`${roboto.className} mb-12`}>Estagiário de desenvolvimento</h2>
                     <Link href="/contatos" className="p-3 bg-h-gray-500 w-fit text-xl rounded-lg transition-all hover:bg-opacity-80">Converse comigo!</Link>
                 </div>
                 <ul className="flex flex-wrap justify-center xl:grid xl:grid-cols-2 xl:w-fit gap-3 text-xl">
@@ -40,9 +40,9 @@ export const AboutMe = () => {
                 unoptimized
                 className="rounded-full shadow-[0_0_20px_5px_rgba(139,195,255,0.8)]"/>
                 <p className="p-4 w-fit text-base leading-tight bg-h-blue-500 rounded-xl text-black absolute -bottom-[15px] -left-[20px]">
-                    <strong className="text-3xl">1+</strong>
+                    <strong className="text-3xl">6+</strong>
                     <br />
-                    ano de experiência
+                    meses de experiência
                 </p>
             </div>
         </main>
