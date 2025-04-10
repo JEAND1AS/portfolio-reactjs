@@ -20,7 +20,7 @@ export const AboutMe = ({aboutMe}: AboutMeProps) => {
     const { title, description, contact, pfp, techs} = aboutMe;
 
     return (
-        <main className="flex flex-wrap-reverse justify-center items-center gap-10 md:gap-32 py-8 text-lg text-center xl:text-left xl:flex-nowrap xl:justify-between">
+        <main className="flex flex-col-reverse xl:flex-row items-center justify-between gap-10 xl:gap-32 py-12 px-6 xl:px-32 max-w-7xl mx-auto text-lg text-center xl:text-left">
             <div className="text-white flex flex-col items-center xl:items-start gap-4 w-full xl:w-120">
                 <h1 className="text-3xl sm:text-7xl xl:leading-[80px]">{title.default}&nbsp;
                     <strong className="font-bold">{title.bold}</strong>

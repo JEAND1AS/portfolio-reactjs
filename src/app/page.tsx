@@ -12,6 +12,7 @@ interface Project {
     url: string;
     alt: string;
   };
+  url: string; // Added the missing 'url' property
 }
 
 interface AboutMe {
